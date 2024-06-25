@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Call Of Duty</title>
+  <link rel="stylesheet" href="menu.css">
+</head>
+<body class="background-game">
+  <div class="Button-left">
+    <button class="favorite leftstyle" type="button" onclick="window.location='menu.html';">MENU</button>
+  </div>
+  <div id="toggleText">Bonjour soldat, comment devons-nous vous appeller ?
+    <form action="http://localhost:3000/process_form" method="POST" class="MyForm">
+        <div class="input-field">
+            <input name="pseudo" type="text" required/>
+            <label>Entrer votre pseudo</label>
+            <button class="button-left-field" type="submit">
+                <span>Validate</span>
+                <span>Validated</span>
+            </button>
+        </div>
+    </form>
+  </div>
+
+  <script src="click-event.js"></script>
+</body>
+</html>
